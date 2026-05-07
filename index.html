@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ============================================ -->
+  <!-- META BÁSICO -->
+  <!-- ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ============================================ -->
+  <!-- SEO PRINCIPAL -->
+  <!-- ============================================ -->
+  <title>Mirexa AI Asistente — Chatbot Gratuito con Razonamiento Profundo y Búsqueda Inteligente</title>
+  <meta name="description" content="Mirexa AI es un chatbot de inteligencia artificial gratuito, online y sin registro. Potenciado con razonamiento profundo y búsqueda inteligente para respuestas precisas, análisis detallados y acceso a información actualizada." />
+  <meta name="keywords" content="chatbot IA gratis, inteligencia artificial online, chatbot sin registro, razonamiento profundo, búsqueda inteligente, Mirexa AI, asistente IA, chat GPT gratis, DeepSeek, Gemini, OpenAI gratis" />
+  <meta name="author" content="NetTiss Software,LLC" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://mirexa-ai.vercel.app/" />
+
+  <!-- ============================================ -->
+  <!-- TEMA Y COLOR (MÓVILES) -->
+  <!-- ============================================ -->
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Mirexa AI" />
+
+  <!-- ============================================ -->
+  <!-- OPEN GRAPH (Facebook, WhatsApp, Telegram, LinkedIn) -->
+  <!-- ============================================ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mirexa AI — Chatbot Gratuito con Razonamiento Profundo y Búsqueda Inteligente" />
+  <meta property="og:description" content="Habla gratis con inteligencia artificial avanzada. Sin registro, sin pagos. Razonamiento profundo y búsqueda inteligente integrados." />
+  <meta property="og:url" content="https://mirexa-ai.vercel.app/" />
+  <meta property="og:image" content="https://mirexa-ai.vercel.app/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mirexa AI — Chatbot Inteligente Gratuito" />
+  <meta property="og:site_name" content="Mirexa AI" />
+  <meta property="og:locale" content="es_LA" />
+
+  <!-- ============================================ -->
+  <!-- TWITTER CARD -->
+  <!-- ============================================ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mirexa AI — Chatbot Gratuito con Razonamiento Profundo y Búsqueda Inteligente" />
+  <meta name="twitter:description" content="IA gratuita, online y sin registro. Razonamiento profundo y búsqueda inteligente para respuestas precisas." />
+  <meta name="twitter:image" content="https://mirexa-ai.vercel.app/img/og-image.png" />
+  <meta name="twitter:image:alt" content="Mirexa AI — Chatbot Inteligente Gratuito" />
+
+  <!-- ============================================ -->
+  <!-- SCHEMA.ORG — DATOS ESTRUCTURADOS (WebApplication) -->
+  <!-- ============================================ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Mirexa AI",
+      "url": "https://mirexa-ai.vercel.app/",
+      "description": "Chatbot de inteligencia artificial gratuito, online y sin registro. Razonamiento profundo y búsqueda inteligente.",
+      "applicationCategory": "AIApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "NetTiss Software, LLC"
+      }
+    }
+  </script>
+
+  <!-- ============================================ -->
+  <!-- PRECONNECT (RENDIMIENTO) -->
+  <!-- ============================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://gen.pollinations.ai" />
+
+  <!-- ============================================ -->
+  <!-- ESTILOS -->
+  <!-- ============================================ -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/aditional.css" />
+</head>
+<body>
+    
+<header class="header">
+  <div class="header__container">
+    
+    <!-- Lateral izquierdo - Desktop -->
+    <div class="header__left">
+      <div class="header__logo">
+        <img src="img/Mirexa-ai-logo-web.jpg" alt="Logo del Chatbot" width="60" height="60" class="header__logo-img">
+      </div>
+      
+      <div class="header__pill">
+        <button class="header__icon-btn" id="icon-menu-desktop" aria-label="Abrir menú" title="Menú">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-iconid="333899" data-svgname="Dock left"><path fill="none" d="M5 5h3v14H5zm5 0h9.002v14H10z"></path><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 5h3v14H5V5zm5 14V5h9l.002 14H10z"></path></svg>
+        </button>
+        <button class="header__icon-btn" id="icon-newchat-desktop" aria-label="Nuevo chat" title="Nuevo chat">
+          <svg fill="currentColor" width="26" height="26" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" data-iconid="314484" data-svgname="Plus circle solid"><path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Lateral derecho - Desktop -->
+    <div class="header__right header__right--desktop">
+      <button class="header__icon-btn header__share-btn is-hidden" id="icon-share-desktop" aria-label="Compartir" title="Compartir">
+        <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-iconid="326484" data-svgname="Arrow redo outline"><path d="M448,256,272,88v96C103.57,184,64,304.77,64,424c48.61-62.24,91.6-96,208-96v96Z" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:32px"></path></svg>
+      </button>
+    </div>
+
+    <!-- Lateral izquierdo - Mobile -->
+    <div class="header__left header__left--mobile">
+      <button class="header__icon-btn" id="icon-menu-mobile" aria-label="Abrir menú" title="Menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Línea superior (completa) -->
+          <line x1="4" y1="8" x2="20" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <!-- Línea inferior (solo hasta la mitad) -->
+          <line x1="4" y1="16" x2="12" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Lateral derecho - Mobile -->
+    <div class="header__right header__right--mobile">
+      <button class="header__icon-btn" id="icon-newchat-mobile" aria-label="Nuevo chat" title="Nuevo chat">
+        <svg fill="currentColor" width="22" height="22" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" data-iconid="314484" data-svgname="Plus circle solid"><path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z"></path></svg>
+      </button>
+      <button class="header__icon-btn header__share-btn is-hidden" id="icon-share-mobile" aria-label="Compartir" title="Compartir">
+        <svg width="22" height="22" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-iconid="326484" data-svgname="Arrow redo outline"><path d="M448,256,272,88v96C103.57,184,64,304.77,64,424c48.61-62.24,91.6-96,208-96v96Z" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:32px"></path></svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Overlay exclusivo del sidebar -->
+<div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar" aria-label="Historial de chats" role="complementary">
+  
+  <!-- Cabecera del sidebar -->
+  <div class="sidebar__header">
+    <h3 class="sidebar__title">Historial</h3>
+  </div>
+
+  <!-- Contenedor de chips de historial -->
+  <div class="sidebar__chips-container" id="chips-container">
+    
+    <!-- Estado vacío (visible cuando no hay chats) -->
+    <div class="sidebar__empty-state" id="sidebar-empty-state">
+      <h4 class="sidebar__empty-title">Tus chats con Mirexa AI aparecerán aquí.</h4>
+      <button class="sidebar__new-chat-btn" id="new-chat-sidebar">
+        Nuevo Chat
+      </button>
+    </div>
+    <!-- Grupos adicionales se generarán dinámicamente vía JS -->
+  </div>
+
+  <!-- Botón de configuración (inferior derecha) -->
+  <div class="sidebar__settings-wrapper">
+    <button class="sidebar__settings-btn" id="sidebar-settings-btn" aria-label="Configuración" title="Configuración">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-iconid="511123" data-svgname="Settings future">
+        <g id="Interface / Settings_Future">
+          <g id="Vector">
+            <path d="M13.6006 21.0761L19.0608 17.9236C19.6437 17.5871 19.9346 17.4188 20.1465 17.1834C20.3341 16.9751 20.4759 16.7297 20.5625 16.4632C20.6602 16.1626 20.6602 15.8267 20.6602 15.1568V8.84268C20.6602 8.17277 20.6602 7.83694 20.5625 7.53638C20.4759 7.26982 20.3341 7.02428 20.1465 6.816C19.9355 6.58161 19.6453 6.41405 19.0674 6.08043L13.5996 2.92359C13.0167 2.58706 12.7259 2.41913 12.416 2.35328C12.1419 2.295 11.8584 2.295 11.5843 2.35328C11.2744 2.41914 10.9826 2.58706 10.3997 2.92359L4.93843 6.07666C4.35623 6.41279 4.06535 6.58073 3.85352 6.816C3.66597 7.02428 3.52434 7.26982 3.43773 7.53638C3.33984 7.83765 3.33984 8.17436 3.33984 8.84742V15.1524C3.33984 15.8254 3.33984 16.1619 3.43773 16.4632C3.52434 16.7297 3.66597 16.9751 3.85352 17.1834C4.06548 17.4188 4.35657 17.5871 4.93945 17.9236L10.3997 21.0761C10.9826 21.4126 11.2744 21.5806 11.5843 21.6465C11.8584 21.7047 12.1419 21.7047 12.416 21.6465C12.7259 21.5806 13.0177 21.4126 13.6006 21.0761Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 11.9998C9 13.6566 10.3431 14.9998 12 14.9998C13.6569 14.9998 15 13.6566 15 11.9998C15 10.3429 13.6569 8.99976 12 8.99976C10.3431 8.99976 9 10.3429 9 11.9998Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+</aside>
+
+<!-- Overlay del modal de configuración -->
+<div class="config-overlay" id="config-overlay" aria-hidden="true"></div>
+
+<!-- Modal de Configuración -->
+<div class="config-modal" id="config-modal" role="dialog" aria-label="Configuración" aria-modal="true">
+  
+  <!-- Header del modal -->
+  <div class="config-modal__header">
+    <h2 class="config-modal__title">Configuración</h2>
+    <button class="config-modal__close-btn" id="config-close-btn" aria-label="Cerrar configuración" title="Cerrar">
+      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-iconid="317810" data-svgname="Actions close simple">
+        <defs>
+          <style>.cls-1{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style>
+        </defs>
+        <g id="ic-actions-close-simple">
+          <line class="cls-1" x1="18.36" y1="18.36" x2="5.64" y2="5.64"></line>
+          <line class="cls-1" x1="18.36" y1="5.64" x2="5.64" y2="18.36"></line>
+        </g>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Cuerpo del modal (scrollable) -->
+  <div class="config-modal__body">
+    
+    <!-- ============================================ -->
+    <!-- SWITCHES -->
+    <!-- ============================================ -->
+    
+    <div class="config-section">
+      
+      <!-- Switch: Enviar al presionar Enter -->
+      <div class="config-switch-row">
+        <span class="config-switch-row__label">Enviar al presionar Enter</span>
+        <button 
+          class="config-switch" 
+          id="switch-enter-send" 
+          role="switch" 
+          aria-checked="true"
+          aria-label="Enviar al presionar Enter"
+        >
+          <span class="config-switch__track">
+            <span class="config-switch__thumb"></span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Switch: No guardar consultas en el historial -->
+      <div class="config-switch-row">
+        <span class="config-switch-row__label">No guardar consultas en el historial</span>
+        <button 
+          class="config-switch" 
+          id="switch-no-history" 
+          role="switch" 
+          aria-checked="true"
+          aria-label="No guardar consultas en el historial"
+        >
+          <span class="config-switch__track">
+            <span class="config-switch__thumb"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- BOTÓN ELIMINAR HISTORIAL -->
+    <!-- ============================================ -->
+    
+    <div class="config-section config-section--centered">
+      <button class="config-delete-btn" id="btn-delete-history">
+        Eliminar todo el historial de consultas
+      </button>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CONFIGURACIÓN DE RESPUESTA (Radio Buttons) -->
+    <!-- ============================================ -->
+    
+    <div class="config-section config-section--bordered">
+      <h3 class="config-section__title">Configuración de respuesta</h3>
+      
+      <div class="config-radio-group">
+        
+        <!-- Opción: Respuesta Estándar -->
+        <label class="config-radio-card">
+          <input 
+            type="radio" 
+            name="response-mode" 
+            value="standard" 
+            class="config-radio-card__input"
+            checked
+          />
+          <span class="config-radio-card__label">Respuesta Estándar</span>
+          <span class="config-radio-card__indicator"></span>
+        </label>
+
+        <!-- Opción: Solo Resultado -->
+        <label class="config-radio-card">
+          <input 
+            type="radio" 
+            name="response-mode" 
+            value="result-only" 
+            class="config-radio-card__input"
+          />
+          <span class="config-radio-card__label">Solo Resultado</span>
+          <span class="config-radio-card__indicator"></span>
+        </label>
+
+        <!-- Opción: Resultado y explicación -->
+        <label class="config-radio-card">
+          <input 
+            type="radio" 
+            name="response-mode" 
+            value="result-explanation" 
+            class="config-radio-card__input"
+          />
+          <span class="config-radio-card__label">Resultado y explicación</span>
+          <span class="config-radio-card__indicator"></span>
+        </label>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Contenedor principal del chat -->
+<main class="main-chat-container" id="main-chat-container">
+  
+  <!-- Contenedor de burbujas de mensajes -->
+  <div class="messages-container" id="messages-container"></div>
+
+  <!-- Área de entrada de mensajes (fija inferior) -->
+  <div class="message-area-input" id="message-area-input">
+    <div class="message-area-input__wrapper">
+      
+      <!-- Textarea -->
+      <textarea 
+        class="message-area-input__textarea" 
+        id="message-textarea"
+        placeholder="Enviar un mensaje para iniciar chat"
+        rows="1"
+        aria-label="Escribe tu mensaje"
+      ></textarea>
+
+      <!-- Toolbar inferior -->
+      <div class="message-area-input__toolbar">
+        
+        <!-- Izquierda: botones de herramientas -->
+        <div class="message-area-input__tools-left">
+          <button class="message-area-input__tool-btn message-area-input__tool-btn--pill" id="btn-deep-think" aria-label="Pensamiento Profundo" title="Pensamiento Profundo">
+            <svg fill="currentColor" width="20" height="20" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" data-iconid="364231" data-svgname="Atom fill">
+                <path d="M196.09521,128a195.65007,195.65007,0,0,0,19.2002-32.71777c11.07715-24.61524,11.21436-44.13575.38574-54.96387C198.23242,22.87354,162.541,35.40918,128,60.00342,93.45947,35.40869,57.76758,22.87256,40.31885,40.31836,29.49023,51.14648,29.62744,70.667,40.70459,95.28223A195.65007,195.65007,0,0,0,59.90479,128a195.65007,195.65007,0,0,0-19.2002,32.71777c-11.07715,24.61524-11.21436,44.13575-.38574,54.96387,5.61767,5.61719,13.12549,8.127,21.87842,8.127,18.4331,0,42.38232-11.1394,65.80273-27.81616,23.42041,16.677,47.36914,27.81616,65.80273,27.81616,8.75,0,16.26172-2.51074,21.87842-8.127,10.82862-10.82812,10.69141-30.34863-.38574-54.96387A195.65007,195.65007,0,0,0,196.09521,128Zm-2.31982-79.7002c4.77539,0,8.39453,1.13575,10.59229,3.333,5.62451,5.624,4.25537,19.48731-3.66309,37.084a172.9306,172.9306,0,0,1-14.79053,25.93188,306.72561,306.72561,0,0,0-21.14453-23.41821,300.50739,300.50739,0,0,0-23.48389-21.13184C163.18457,55.21191,182.00049,48.2998,193.77539,48.2998Zm-138.48,40.417c-7.91846-17.59668-9.2876-31.46-3.66309-37.084,2.19776-2.19824,5.815-3.333,10.59229-3.333,11.77539,0,30.59131,6.91285,52.48975,21.79908A300.45376,300.45376,0,0,0,91.23047,91.23047a306.72561,306.72561,0,0,0-21.14453,23.41821A172.9306,172.9306,0,0,1,55.29541,88.7168ZM51.63232,204.36719c-5.62451-5.624-4.25537-19.48731,3.66309-37.084a172.9306,172.9306,0,0,1,14.79053-25.93188,306.72561,306.72561,0,0,0,21.14453,23.41821,300.52025,300.52025,0,0,0,23.4917,21.13233C83.93555,206.83276,59.249,211.98193,51.63232,204.36719ZM102.544,153.45508A288.40831,288.40831,0,0,1,79.87939,128,296.26257,296.26257,0,0,1,128,79.84717a288.52058,288.52058,0,0,1,25.45605,22.69775A288.40831,288.40831,0,0,1,176.12061,128a288.40831,288.40831,0,0,1-22.66456,25.45508,288.63877,288.63877,0,0,1-25.45459,22.69873A288.50733,288.50733,0,0,1,102.544,153.45508Zm101.82373,50.91211c-2.19776,2.19824-5.815,3.333-10.59229,3.333-11.77588-.00123-30.59326-6.91456-52.49316-21.80176a300.51532,300.51532,0,0,0,23.4873-21.12891,306.72561,306.72561,0,0,0,21.14453-23.41821,172.9306,172.9306,0,0,1,14.79053,25.93188C208.62305,184.87988,209.99219,198.74316,204.36768,204.36719ZM140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"></path>
+            </svg>
+            <span class="message-area-input__tool-label">Pensamiento Profundo</span>
+          </button>
+          <button class="message-area-input__tool-btn message-area-input__tool-btn--pill" id="btn-smart-search" aria-label="Búsqueda Inteligente" title="Búsqueda Inteligente">
+            <svg fill="currentColor" width="20" height="20" viewBox="-1 0 19 19" xmlns="http://www.w3.org/2000/svg" data-iconid="438948" data-svgname="Web"><path d="M16.417 9.57a7.917 7.917 0 1 1-8.144-7.908 1.758 1.758 0 0 1 .451 0 7.913 7.913 0 0 1 7.693 7.907zM5.85 15.838q.254.107.515.193a11.772 11.772 0 0 1-1.572-5.92h-3.08a6.816 6.816 0 0 0 4.137 5.727zM2.226 6.922a6.727 6.727 0 0 0-.511 2.082h3.078a11.83 11.83 0 0 1 1.55-5.89q-.249.083-.493.186a6.834 6.834 0 0 0-3.624 3.622zm8.87 2.082a14.405 14.405 0 0 0-.261-2.31 9.847 9.847 0 0 0-.713-2.26c-.447-.952-1.009-1.573-1.497-1.667a8.468 8.468 0 0 0-.253 0c-.488.094-1.05.715-1.497 1.668a9.847 9.847 0 0 0-.712 2.26 14.404 14.404 0 0 0-.261 2.309zm-.974 5.676a9.844 9.844 0 0 0 .713-2.26 14.413 14.413 0 0 0 .26-2.309H5.903a14.412 14.412 0 0 0 .261 2.31 9.844 9.844 0 0 0 .712 2.259c.487 1.036 1.109 1.68 1.624 1.68s1.137-.644 1.623-1.68zm4.652-2.462a6.737 6.737 0 0 0 .513-2.107h-3.082a11.77 11.77 0 0 1-1.572 5.922q.261-.086.517-.194a6.834 6.834 0 0 0 3.624-3.621zM11.15 3.3a6.82 6.82 0 0 0-.496-.187 11.828 11.828 0 0 1 1.55 5.89h3.081A6.815 6.815 0 0 0 11.15 3.3z"></path></svg>
+            <span class="message-area-input__tool-label">Búsqueda Inteligente</span>
+          </button>
+        </div>
+
+        <!-- Derecha: botón enviar -->
+        <div class="message-area-input__tools-right">
+          <button class="message-area-input__send-btn" id="btn-send-message" aria-label="Enviar mensaje" title="Enviar">
+            <svg width="23" height="23" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-iconid="490984" data-svgname="Arrow up">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Arrow-Up">
+                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                    <line x1="12" y1="6.5" x2="12" y2="18" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                    <path d="M16,10 L12.7071,6.70711 C12.3166,6.31658 11.6834,6.31658 11.2929,6.70711 L8,10" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                  </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+    
+    <!-- Marked.js - Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <!-- 5. Scripts JavaScript (orden estricto) -->
+    <script src="js/script-basic.js"></script>
+    <script src="js/api-config.js"></script>
+    <script src="js/system-prompt.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/ui.js"></script>
+    
+  </body>
+</html>

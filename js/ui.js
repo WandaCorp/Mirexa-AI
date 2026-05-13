@@ -1282,6 +1282,7 @@ function handleNewChat() {
   closeSidebar();
   hideEmptyState();
   messageTextarea.focus();
+  hideEmptyState();
 }
 
 /**

@@ -17,8 +17,8 @@
 
 .bot-spinner__dot {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: var(--spinner-dot-color);
   animation: bot-spinner-bounce 700ms ease-in-out infinite both;

@@ -57,7 +57,7 @@
      ========================================== */
   --shadow-pill: 0 2px 12px rgba(0, 0, 0, 0.07);
   --shadow-sidebar: 2px 0 24px rgba(0, 0, 0, 0.08);
-  --shadow-input: 0 3px 2px rgba(0, 0, 0, 0.04);
+  --shadow-input: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-input-focus: 0 4px 24px rgba(5, 106, 255, 0.12);
   --shadow-modal: 0 -8px 40px rgba(0, 0, 0, 0.15);
 
@@ -280,7 +280,6 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-size: var(--font-size-base);
   line-height: 1.5;
-  color: var(--body-text);
   background-color: var(--body-bg);
   height: 100%;
   overflow: hidden;
@@ -539,6 +538,9 @@ p {
   padding: 20px 20px 12px;
   border-bottom: 1px solid var(--sidebar-border);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .sidebar__title {
@@ -673,7 +675,7 @@ p {
   height: var(--btn-icon-size-lg);
   border-radius: 50%;
   background-color: transparent;
-  color: var(--sidebar-settings-color);
+  color: var(--blue-500);
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
@@ -840,10 +842,8 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 14px 16px;
-  border-bottom: 1px solid var(--config-switch-row-border);
   border-radius: 12px;
   gap: 12px;
-  background-color: var(--config-switch-row-bg);
 }
 
 .config-switch-row__label {
@@ -1190,7 +1190,7 @@ p {
 .message-actions {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 12px;
   margin-top: 4px;
   opacity: 0;
   transition: opacity var(--transition-fast);

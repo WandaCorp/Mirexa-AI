@@ -323,8 +323,15 @@ function createBotBubble(content, messageId) {
       </button>
       <button class="message-actions__btn" aria-label="Escuchar mensaje" title="Texto a voz" data-action="tts">
         <span class="message-actions__icon-wrap">
-          <svg class="message-actions__icon-svg" fill="currentColor" width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-iconid="379309" data-svgname="Voice">
-            <path fill-rule="evenodd" d="M8,2 C8.55228475,2 9,2.44771525 9,3 L9,21 C9,21.5522847 8.55228475,22 8,22 C7.44771525,22 7,21.5522847 7,21 L7,3 C7,2.44771525 7.44771525,2 8,2 Z M20,4 C20.5522847,4 21,4.44771525 21,5 L21,19 C21,19.5522847 20.5522847,20 20,20 C19.4477153,20 19,19.5522847 19,19 L19,5 C19,4.44771525 19.4477153,4 20,4 Z M12,6 C12.5522847,6 13,6.44771525 13,7 L13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 L11,7 C11,6.44771525 11.4477153,6 12,6 Z M4,9 C4.55228475,9 5,9.44771525 5,10 L5,14 C5,14.5522847 4.55228475,15 4,15 C3.44771525,15 3,14.5522847 3,14 L3,10 C3,9.44771525 3.44771525,9 4,9 Z M16,10 C16.5522847,10 17,10.4477153 17,11 L17,13 C17,13.5522847 16.5522847,14 16,14 C15.4477153,14 15,13.5522847 15,13 L15,11 C15,10.4477153 15.4477153,10 16,10 Z"></path>
+          <svg class="message-actions__icon-svg" fill="currentColor" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" data-iconid="302398" data-svgname="Volume lower">
+            <g>
+	             <path d="M8,46h11.172l17.414,17.414C36.969,63.797,37.479,64,38,64c0.258,0,0.518-0.05,0.766-0.152C39.513,63.538,40,62.809,40,62
+		           V2c0-0.809-0.487-1.538-1.234-1.848c-0.749-0.31-1.607-0.14-2.18,0.434L19.172,18H8c-1.104,0-2,0.896-2,2v24
+		           C6,45.104,6.896,46,8,46z M10,22h10c0.53,0,1.039-0.211,1.414-0.586L36,6.829v50.343L21.414,42.586C21.039,42.211,20.53,42,20,42
+		           H10V22z"></path>
+	             <path d="M46,40c-1.104,0-2,0.896-2,2s0.896,2,2,2c6.617,0,12-5.383,12-12s-5.383-12-12-12c-1.104,0-2,0.896-2,2s0.896,2,2,2
+		           c4.411,0,8,3.589,8,8S50.411,40,46,40z"></path>
+            </g>
           </svg>
           <span class="message-actions__spinner" style="display:none;"></span>
         </span>
@@ -888,7 +895,7 @@ function handleEditMessage(messageId) {
   session.messages = session.messages.slice(0, msgIndex);
   saveSessionsToStorage();
   renderActiveSession();
-
+  autoResizeTextarea();
   // Solicitar al usuario que reenvíe el mensaje
   showToast('Mensaje cargado. Edítalo y reenvíalo.');
 }

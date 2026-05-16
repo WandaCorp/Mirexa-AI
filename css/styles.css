@@ -55,7 +55,7 @@
   /* ==========================================
      SOMBRAS
      ========================================== */
-  --shadow-pill: 0 2px 12px rgba(0, 0, 0, 0.07);
+  --shadow-pill: 0 2px 4px rgba(0, 0, 0, 0.07);
   --shadow-sidebar: 2px 0 24px rgba(0, 0, 0, 0.08);
   --shadow-input: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-input-focus: 0 4px 24px rgba(5, 106, 255, 0.12);
@@ -66,7 +66,7 @@
      ========================================== */
   --font-size-xs: clamp(0.6875rem, 0.65rem + 0.2vw, 0.75rem);
   --font-size-sm: clamp(0.8125rem, 0.78rem + 0.2vw, 0.875rem);
-  --font-size-base: clamp(0.938rem, 0.9rem + 0.2vw, 1rem);
+  --font-size-base: clamp(0.980rem, 0.9rem + 0.2vw, 1rem);
   --font-size-md: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   --font-size-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
   --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
@@ -105,7 +105,7 @@
   /* ==========================================
      LAYOUT
      ========================================== */
-  --header-height: 50px;
+  --header-height: 60px;
   --sidebar-width-desktop: 70%;
   --sidebar-max-desktop: 420px;
   --sidebar-width-mobile: 70%;
@@ -117,7 +117,7 @@
      BOTONES
      ========================================== */
   --btn-icon-size-sm: 30px;
-  --btn-icon-size-md: 30px;
+  --btn-icon-size-md: 35px;
   --btn-icon-size-lg: 45px;
 
   /* ==========================================
@@ -139,7 +139,7 @@
   --header-bg: var(--neutral-white);
   --header-border: var(--neutral-100);
   --header-btn-color: var(--neutral-800);
-  --header-btn-hover-bg: var(--neutral-100);
+  --header-btn-hover-bg: var(--neutral-200);
   --header-btn-hover-color: var(--neutral-black);
   --header-pill-bg: var(--neutral-white);
   --header-pill-border: var(--neutral-300);
@@ -216,9 +216,9 @@
   /* --- Input Area --- */
   --input-area-bg: var(--neutral-white);
   --input-wrapper-bg: var(--neutral-white);
-  --input-wrapper-border: var(--neutral-200);
+  --input-wrapper-border: var(--neutral-300);
   --input-textarea-color: var(--neutral-900);
-  --input-placeholder-color: var(--neutral-500);
+  --input-placeholder-color: var(--neutral-600);
 
   /* --- Toolbar --- */
   --tool-btn-color: var(--neutral-700);
@@ -402,7 +402,7 @@ p {
 .header__logo-img {
   width: 35px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 15px;
   object-fit: cover;
   display: block;
 }
@@ -412,9 +412,10 @@ p {
   align-items: center;
   gap: 4px;
   background-color: var(--header-pill-bg);
-  padding: 5px;
+  padding: 3px;
   border-radius: var(--radius-pill);
   box-shadow: var(--shadow-pill);
+  border: 1px solid var(--neutral-200);
 }
 
 .header__icon-btn {
@@ -475,7 +476,7 @@ p {
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 8px;
+    gap: 15px;
   }
 
   .header__logo,
@@ -728,11 +729,13 @@ p {
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-slow), visibility var(--transition-slow);
+  pointer-events: none;
 }
 
 .config-overlay.is-visible {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 /* ============================================
@@ -755,10 +758,12 @@ p {
   transition: transform var(--transition-modal);
   overflow: hidden;
   padding: 0 12px;
+  pointer-events: none;
 }
 
 .config-modal.is-open {
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 .config-modal__header {
@@ -1267,10 +1272,6 @@ p {
   box-shadow: var(--shadow-input);
   padding: 8px 10px 8px 16px;
   transition: box-shadow var(--transition-normal);
-}
-
-.message-area-input__wrapper:focus-within {
-  box-shadow: var(--shadow-input-focus);
 }
 
 @media (max-width: 1024px) {

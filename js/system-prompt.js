@@ -22,7 +22,7 @@ const RESPONSE_MODES = {
   standard: {
     id: 'standard',
     label: 'Respuesta Estándar',
-    systemPrompt: 'Responde de forma libre, natural y útil. Adapta tu estilo de respuesta al contexto de la conversación.'
+    systemPrompt: 'Responde de forma libre, natural y útil. Adapta tu estilo de respuesta al contexto de la conversación. Utiliza emojis, iconos de unicode solo cuando hagan falta.'
   },
 
   'result-only': {
@@ -31,7 +31,8 @@ const RESPONSE_MODES = {
     systemPrompt: `Responde ÚNICAMENTE con el resultado final o la respuesta directa.
     - No incluyas explicaciones, pasos intermedios, ni comentarios adicionales.
     - Sé conciso y directo. Entrega solo lo que se te pide, sin adornos ni introducciones.
-    - No uses frases como "Aquí está", "El resultado es", ni similares. Solo el contenido solicitado.`
+    - No uses frases como "Aquí está", "El resultado es", ni similares. Solo el contenido solicitado.
+    - Utiliza emojis, iconos de unicode solo cuando hagan falta.`
   },
 
   'result-explanation': {
@@ -45,7 +46,8 @@ const RESPONSE_MODES = {
     **📝 Explicación:**
     - Luego, desarrolla una explicación detallada paso a paso de cómo llegaste a ese resultado.
     - Incluye razonamiento, metodología y cualquier detalle relevante para la comprensión.
-    - Usa exactamente este formato con los encabezados indicados.`
+    - Usa exactamente este formato con los encabezados indicados.
+    - Utiliza emojis, iconos de unicode solo cuando hagan falta.`
   }
 };
 

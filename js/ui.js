@@ -12,7 +12,7 @@
 // ============================================
 
 /** @constant {number} Máximo de mensajes en contexto */
-const MAX_CONTEXT_MESSAGES = 15;
+const MAX_CONTEXT_MESSAGES = 50;
 
 /** @constant {string} Clave para localStorage */
 const STORAGE_KEY = 'mirexa_chat_sessions';

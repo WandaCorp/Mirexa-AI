@@ -57,7 +57,7 @@
      ========================================== */
   --shadow-pill: 0 2px 4px rgba(0, 0, 0, 0.07);
   --shadow-sidebar: 2px 0 24px rgba(0, 0, 0, 0.08);
-  --shadow-input: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-input: 0 3px 2px rgba(0, 0, 0, 0.04);
   --shadow-input-focus: 0 4px 24px rgba(5, 106, 255, 0.12);
   --shadow-modal: 0 -8px 40px rgba(0, 0, 0, 0.15);
 
@@ -204,7 +204,7 @@
   --chat-bg: var(--neutral-white);
 
   /* --- Burbujas --- */
-  --bubble-bot-text: var(--neutral-900);
+  --bubble-bot-text: var(--neutral-black);
   --bubble-user-bg: var(--blue-100);
   --bubble-user-text: var(--neutral-900);
 
@@ -400,8 +400,8 @@ p {
 }
 
 .header__logo-img {
-  width: 35px;
-  height: 35px;
+  width: 100px;
+  height: auto;
   border-radius: 15px;
   object-fit: cover;
   display: block;
@@ -752,8 +752,7 @@ p {
   z-index: 310;
   display: flex;
   flex-direction: column;
-  border-radius: var(--radius-modal-container) var(--radius-modal-container) 0 0;
-  box-shadow: var(--shadow-modal);
+  border-radius: var(--radius-modal-container) var(--radius-modal-container) 0 0);
   transform: translateY(100%);
   transition: transform var(--transition-modal);
   overflow: hidden;
@@ -1314,6 +1313,7 @@ p {
   font-family: inherit;
   display: flex;
   align-items: center;
+  caret-color: var(--blue-500);
 }
 
 .message-area-input__textarea::placeholder {
@@ -1410,6 +1410,7 @@ p {
     border-radius: var(--radius-pill);
     padding: 0 14px 0 10px;
     gap: 6px;
+    font-size: var(--font-size-base);
   }
 
   .message-area-input__tool-label {

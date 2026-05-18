@@ -119,7 +119,7 @@ function setTemperature(temp) {
  */
 async function callPollinationsAPI(messages, onChunk, options = {}) {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 60000);
+  const timeoutId = setTimeout(() => controller.abort(), 10000);
 
   const temperature = options.temperature || getCurrentTemperature();
   const signal = options.signal || controller.signal;

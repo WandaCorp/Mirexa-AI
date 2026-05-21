@@ -130,11 +130,13 @@ async function callPollinationsAPI(messages, onChunk, options = {}) {
       {
         method: 'POST',
         headers: API_CONFIG.getHeaders(),
+        // En callPollinationsAPI, agregar:
         body: JSON.stringify({
           model: currentModel,
           messages: injectSystemPrompt(messages),
           stream: true,
-          temperature: temperature
+          temperature: temperature,
+          thinking: { type: "enabled", budget_tokens: 2048 } // ← NUEVO
         }),
         signal: signal
       }

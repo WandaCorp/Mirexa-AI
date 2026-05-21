@@ -285,19 +285,6 @@
 }
 
 /* ============================================
-   MENSAJE DE ERROR DEL BOT
-   ============================================ */
-
-.bot-content:has(blockquote) blockquote:first-child:has(> p:first-child:contains("⚠️")) {
-  border-left-color: var(--color-warning);
-  background-color: var(--color-warning-bg);
-  padding: 10px 14px;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-style: normal;
-  color: var(--color-warning-text);
-}
-
-/* ============================================
    BOTÓN DESHABILITADO
    ============================================ */
 

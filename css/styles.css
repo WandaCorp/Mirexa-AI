@@ -36,9 +36,9 @@
   /* ==========================================
      SEMÁNTICOS (feedback)
      ========================================== */
-  --color-success: #22c55e;
-  --color-success-bg: #f0fdf4;
-  --color-success-track: #c8f0d4;
+  --color-success: #426EFE;
+  --color-success-bg: #EDF3FE;
+  --color-success-track: #b8d4fe;
   --color-warning: #f59e0b;
   --color-warning-bg: #fffbeb;
   --color-warning-text: #92400e;
@@ -151,7 +151,7 @@
   --sidebar-chip-color: var(--neutral-700);
   --sidebar-chip-hover-bg: var(--neutral-100);
   --sidebar-chip-active-bg: var(--blue-50);
-  --sidebar-chip-active-color: var(--blue-500);
+  --sidebar-chip-active-color: var(--neutral-800);
   --sidebar-timestamp-color: var(--neutral-500);
   --sidebar-empty-text: var(--neutral-500);
   --sidebar-settings-color: var(--neutral-700);
@@ -195,7 +195,7 @@
   --config-radio-checked-dot: var(--color-success);
   --config-radio-checked-bg: var(--color-success-bg);
   --config-radio-label: var(--neutral-800);
-  --config-radio-label-checked: #166534;
+  --config-radio-label-checked:  var(--blue-500);
   --config-section-bordered-border: var(--neutral-200);
   --config-section-title: var(--neutral-900);
 
@@ -205,7 +205,7 @@
 
   /* --- Burbujas --- */
   --bubble-bot-text: var(--neutral-black);
-  --bubble-user-bg: var(--blue-100);
+  --bubble-user-bg: #F3F3F1;
   --bubble-user-text: var(--neutral-900);
 
   /* --- Acciones de mensaje --- */
@@ -215,20 +215,21 @@
 
   /* --- Input Area --- */
   --input-area-bg: var(--neutral-white);
-  --input-wrapper-bg: var(--neutral-white);
+  --input-wrapper-bg: #ECECEA;
   --input-wrapper-border: var(--neutral-300);
   --input-textarea-color: var(--neutral-900);
-  --input-placeholder-color: var(--neutral-600);
+  --input-placeholder-color: var(--neutral-700);
 
   /* --- Toolbar --- */
+  --tool-bg: var(--neutral-100);
   --tool-btn-color: var(--neutral-700);
   --tool-btn-border: var(--neutral-300);
-  --tool-btn-hover-bg: var(--neutral-100);
+  --tool-btn-hover-bg: #E3E3E2;
   --tool-btn-hover-color: var(--neutral-800);
   --tool-btn-hover-border: var(--neutral-400);
-  --tool-btn-active-bg: var(--blue-50);
-  --tool-btn-active-color: var(--blue-500);
-  --tool-btn-active-border: var(--blue-500);
+  --tool-btn-active-bg: var(--blue-200);
+  --tool-btn-active-color: var(--blue-600);
+  --tool-btn-active-border: var(--blue-600);
 
   /* --- Botón Enviar --- */
   --send-btn-idle-bg: #B0C1FF;
@@ -261,6 +262,11 @@
 
   /* --- Spinner --- */
   --spinner-dot-color: var(--neutral-300);
+}
+
+/* ========= PROPIEDADES PARA TEMA OSCURO ========*/
+.dark-theme{
+  
 }
 
 /* ============================================
@@ -752,7 +758,7 @@ p {
   z-index: 310;
   display: flex;
   flex-direction: column;
-  border-radius: var(--radius-modal-container) var(--radius-modal-container) 0 0);
+  border-radius: var(--radius-modal-container) var(--radius-modal-container) 0 0;
   transform: translateY(100%);
   transition: transform var(--transition-modal);
   overflow: hidden;
@@ -1351,12 +1357,12 @@ p {
   width: var(--btn-icon-size-md);
   height: var(--btn-icon-size-md);
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--tool-bg);
   color: var(--tool-btn-color);
   transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
   flex-shrink: 0;
   gap: 0;
-  border: 1px solid var(--tool-btn-border);
+  border: none;
 }
 
 .message-area-input__tool-btn:hover {
